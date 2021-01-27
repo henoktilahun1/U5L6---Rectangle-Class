@@ -27,24 +27,23 @@ class Rectangle {
 		return "Rectangle with length" + length + "and width " + width;
 	}
 
-  //scaleLength is how much we multiple the length
-  public double scaleLength(double scale)
+  //As a mutator, scaleLength is a void that multiplies
+  //the length of the rectange
+  public void scaleLength(double scale)
   {
     double scaleLength = length*scale;
-    return scaleLength;
   }
 
-  //scaleWidth is how much we multiple the width
-  public double scaleWidth(double scale)
+  //scaleWidth multiplies the width of the rectangle
+  public void scaleWidth(double scale)
   {
     double scaleWidth = width*scale;
-    return scaleWidth;
   }
 
   //scale both uses the length and width to scale both of them.
-  public double scaleBoth(double scaleLen, double scaleWid)
+  public void scaleBoth(double scaleLen, double scaleWid)
   {
     double scaleBoth = length*scaleLen + width* scaleWid;
-    return scaleBoth; 
+     
   }
 }
