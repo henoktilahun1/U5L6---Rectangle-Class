@@ -45,6 +45,6 @@ class Rectangle {
   public double scaleBoth(double scale)
   {
     scaleBoth = scaleLength*scaleWidth;
-    return scaleBoth;
+    return scaleBoth; 
   }
 }
