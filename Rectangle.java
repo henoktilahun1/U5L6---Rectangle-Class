@@ -30,21 +30,21 @@ class Rectangle {
   //scaleLength is how much we multiple the length
   public double scaleLength(double scale)
   {
-    scaleLength = length*scale;
+    double scaleLength = length*scale;
     return scaleLength;
   }
 
   //scaleWidth is how much we multiple the width
   public double scaleWidth(double scale)
   {
-    scaleWidth = width*scale;
+    double scaleWidth = width*scale;
     return scaleWidth;
   }
 
   //scale both uses the length and width to scale both of them.
-  public double scaleBoth(double scale)
+  public double scaleBoth(double scaleLen, double scaleWid)
   {
-    scaleBoth = scaleLength*scaleWidth;
+    double scaleBoth = length*scaleLen + width* scaleWid;
     return scaleBoth; 
   }
 }
